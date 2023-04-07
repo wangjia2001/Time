@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:focusableInTouchMode="true">
+
+
+
+    <TextView
+        android:text="权限"
+        android:id="@+id/ad_view"
+        android:focusableInTouchMode="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_yellow"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30sp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/timeuse"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/time_using"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <com.example.time.PieChart
+        android:id="@+id/mPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/calculate"
+        android:textSize="20sp"/>
+    <fragment
+        android:id="@+id/app_time_day_fragment"
+        android:name="com.example.time.appTitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+
+
+
+
+</LinearLayout>

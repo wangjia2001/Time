@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30sp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.example.time.LineChart
+        android:id="@+id/mLine"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom"
+        android:text="最近使用"
+        android:textSize="20sp"/>
+
+    <fragment
+        android:id="@+id/app_time_week_fragment"
+        android:name="com.example.time.chart_app_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+</LinearLayout>

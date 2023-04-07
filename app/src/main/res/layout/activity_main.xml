@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/finaly"
+        android:id="@+id/relativeLayout"
+
+        android:visibility="gone"
+        tools:context="viewpager.view.com.org.myviewpager.SplashActivity">
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_count"
+            style="@style/MainButtonStyle"
+            android:text="统计"
+            android:textSize="20dp"
+            android:paddingTop="10dp"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_chart"
+            style="@style/MainButtonStyle"
+            android:text="图表"
+            android:textSize="20dp"
+            android:paddingTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_lock"
+            style="@style/MainButtonStyle"
+            android:text="锁机"
+            android:textSize="20dp"
+            android:paddingTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/MainButtonStyle"
+            android:text="我的"
+            android:textSize="20dp"
+            android:paddingTop="10dp"/>
+
+    </RadioGroup>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#82B1FF"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Your App"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_nv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="#888888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_bubble"
+        android:layout_width="199dp"
+        android:layout_height="166dp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/edit_bubble"
+        android:layout_width="139dp"
+        android:layout_height="109dp"
+        android:inputType="textMultiLine"
+        android:text="请选择您需要进行防沉迷的应用"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="385dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="4dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nv"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/lock_count"
+            style="@style/MainButtonStyle"
+            android:paddingTop="10dp"
+            android:text="统计"
+            android:textSize="20dp" />
+
+
+        <RadioButton
+            android:id="@+id/lock_chart"
+            style="@style/MainButtonStyle"
+            android:paddingTop="10dp"
+            android:text="图表"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/lock_lock"
+            style="@style/MainButtonStyle"
+            android:paddingTop="10dp"
+            android:text="锁机"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/lock_me"
+            style="@style/MainButtonStyle"
+            android:paddingTop="10dp"
+            android:text="我的"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spin_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/appselectshow"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.time.NavView
+        android:id="@+id/nv"
+        android:layout_width="21dp"
+        android:layout_height="434dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868"
+        tools:ignore="MissingClass,MissingConstraints">
+
+    </com.example.time.NavView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

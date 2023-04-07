@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lockactivity">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:text="你的软件被锁住啦！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:hint="输入解锁密码"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/password"-->
+<!--        android:hint="输入解锁密码"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"></EditText>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submit"
+        android:background="@drawable/btn_bg_red"
+        android:gravity="center"
+        android:text="提交"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/submit"-->
+<!--        android:text="提交"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--    </Button>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/fool"
+        android:gravity="center"
+        android:text="我不知道密码"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

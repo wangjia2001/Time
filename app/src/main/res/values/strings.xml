@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Time</string>
+    <string name="timeuse">今日使用时间：</string>
+    <string name="calculate">应用统计</string>
+</resources>
